@@ -1,0 +1,70 @@
+{
+  "namespace": "streams",
+  "name": "billing_cdr_logs",
+  "type": "record",
+  "fields": [
+    {
+      "name": "subscriptionId",
+      "type": {
+        "type": "long",
+        "arg.properties": {
+          "options": [
+            100,
+            101,
+            102,
+            103
+          ]
+        }
+      }
+    },
+    {
+      "name": "eventDate",
+      "type": {
+        "type": "string",
+        "arg.properties": {
+          "options": [
+            "2023-11-30"
+          ]
+        }
+      }
+    },
+    {
+      "name": "amount",
+      "type": {
+        "type": "double",
+        "arg.properties": {
+          "options": [
+            10.00,
+            20.00,
+            34.00,
+            5.00
+          ]
+        }
+      }
+    },
+    {
+      "name": "unit",
+      "type": {
+        "type": "string",
+        "arg.properties": {
+          "options": [
+            "minutes",
+            "quantity"
+          ]
+        }
+      }
+    },
+    {
+      "name": "type",
+      "type": {
+        "type": "string",
+        "arg.properties": {
+          "options": [
+            "CALL",
+            "SMS"
+          ]
+        }
+      }
+    }
+  ]
+}

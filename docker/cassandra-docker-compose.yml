@@ -1,0 +1,19 @@
+version: '2'
+services:
+##https://hub.docker.com/_/cassandra
+  cassandradb:
+    image: cassandra:5.0
+    container_name: cassandradb
+    volumes:
+      - ~/work/xm-online/volumes/cassandra:/var/lib/cassandra
+    ports:
+      - 9042:9042
+      - 9160:9160
+      - 7001:7001
+      - 7199:7199
+    networks:
+      - internal
+networks:
+  internal:
+    name: local
+    external: true
