@@ -5,7 +5,7 @@ The output should be a stream of objects for each subscriber on each date.<br>
 Each object should include the subscriber's duration of calls for the day, and the number of SMS messages for the day.<br>
 If a subscriber had no calls or messages on a given day, the resulting table should still display zeros.<br>
 
-    # 1. Cassandra: Init CDR storage
+# 1. Cassandra: Init CDR storage
 
 ### 1.1 Init key space
 ```
